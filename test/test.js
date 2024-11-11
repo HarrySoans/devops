@@ -12,3 +12,9 @@ describe('First two terms', function() {
       assert.strictEqual(main.fibonacci(1), 1);
     });
 });
+
+describe('Factorial of a negative number', function() {
+  it('should return undefined for negative inputs', function() {
+      assert.strictEqual(main.factorial(-5), undefined);
+  });
+});
