@@ -18,3 +18,21 @@ describe('Factorial of a negative number', function() {
       assert.strictEqual(main.factorial(-5), undefined);
   });
 });
+
+describe('Factorial Function Tests', function () {
+    it('should return 1 when n is 0', function () {
+        assert.strictEqual(factorial(0), 1); 
+    });
+
+    it('should return 1 when n is 1', function () {
+        assert.strictEqual(factorial(1), 1); 
+    });
+
+    it('should return undefined for negative input', function () {
+        assert.strictEqual(factorial(-5), undefined); 
+    });
+
+    it('should calculate factorial for positive integers', function () {
+        assert.strictEqual(factorial(5), 120); 
+    });
+});
